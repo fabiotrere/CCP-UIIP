@@ -10,6 +10,7 @@ cur = db.cursor()
 cur.execute('INSERT INTO banche(id_banca, nome_banca, indirizzo_fatturazione) VALUES (001, "Banca di Milano", "Via Verdi 5"),(002, "Banca di Milano", "Via Verdi 5"),(003, "Banca di Milano", "Via Verdi 5")')
 cur.execute("SELECT * FROM banche")
 db.commit()
+
 for row in cur.fetchall():
     print (row)
 def rimuovi_cliente(nome_da_eliminare):
