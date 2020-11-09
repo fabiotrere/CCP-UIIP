@@ -1,18 +1,18 @@
-import os
-os.chdir('C:/Users/fabio/Desktop/Code contest project/')
-import pymysql
+#import os
+#os.chdir('C:/Users/fabio/Desktop/Code contest project/')
+#import pymysql
 
-db = pymysql.connect(host="localhost",    # your host, usually localhost
+#db = pymysql.connect(host="localhost",    # your host, usually localhost
                      user="root",         # your username
                      db="ccp")            # name of the data base
-cur = db.cursor()
+#cur = db.cursor()
 
-cur.execute('INSERT INTO banche(id_banca, nome_banca, indirizzo_fatturazione) VALUES (001, "Banca di Milano", "Via Verdi 5"),(002, "Banca di Milano", "Via Verdi 5"),(003, "Banca di Milano", "Via Verdi 5")')
-cur.execute("SELECT * FROM banche")
-db.commit()
+#cur.execute('INSERT INTO banche(id_banca, nome_banca, indirizzo_fatturazione) VALUES (001, "Banca di Milano", "Via Verdi 5"),(002, "Banca di Milano", "Via Verdi 5"),(003, "Banca di Milano", "Via Verdi 5")')
+#cur.execute("SELECT * FROM banche")
+#db.commit()
 
-for row in cur.fetchall():
-    print (row)
+#for row in cur.fetchall():
+#    print (row)
 def rimuovi_cliente(nome_da_eliminare):
     pass
 def stampa_clienti():
