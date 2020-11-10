@@ -1,0 +1,38 @@
+Index: Gestione_Contatori.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>#import os\r\n#os.chdir('C:/Users/fabio/Desktop/Code contest project/')\r\n#import pymysql\r\n\r\n#db = pymysql.connect(host=\"localhost\",    # your host, usually localhost\r\n                     user=\"root\",         # your username\r\n                     db=\"ccp\")            # name of the data base\r\n#cur = db.cursor()\r\n\r\n#cur.execute('INSERT INTO banche(id_banca, nome_banca, indirizzo_fatturazione) VALUES (001, \"Banca di Milano\", \"Via Verdi 5\"),(002, \"Banca di Milano\", \"Via Verdi 5\"),(003, \"Banca di Milano\", \"Via Verdi 5\")')\r\n#cur.execute(\"SELECT * FROM banche\")\r\n#db.commit()\r\n\r\n#for row in cur.fetchall():\r\n#    print (row)\r\ndef rimuovi_cliente(nome_da_eliminare):\r\n    pass\r\ndef stampa_clienti():\r\n    pass\r\ndef nuovo_cliente():\r\n    pass\r\ndef stampa_comandi():\r\n    print(\"****************\")\r\n    print(\"1 Cancella utente\")\r\n    print(\"2 Stampa elenco clienti\")\r\n    print(\"3 ...\")\r\n    print(\"4 ...\")\r\n    print(\"5 Inserisci nuovo cliente\")\r\n    print(\"6 Modifica contatto\")\r\n    print(\"7 Stampa Comandi\")\r\n    print(\"0 Quit\")\r\n    print(\"*******************\")\r\n#___MAIN___\r\nprint(\"Benvenuto nel software di gestione contatori\")\r\nwhile False:\r\n    comando = int(input(\"Scegli il comando da eseguire: \"))\r\n    stampa_comandi()\r\n    if comando == 1:\r\n        nome_da_eliminare = input(\"inserisci il nome dell'utente da eliminare: \")\r\n        rimuovi_cliente(nome_da_eliminare)\r\n    elif comando == 2:\r\n        stampa_clienti()\r\n    elif comando == 3:\r\n        pass\r\n    elif comando == 4:\r\n        pass\r\n    elif comando == 5:\r\n        nuovo_cliente()\r\n    elif comando == 6:\r\n        pass\r\n    elif comando == 7:\r\n        stampa_comandi()\r\n    elif comando == 8:\r\n        pass\r\n    elif comando == 0:\r\n        print('Grazie per aver usato la nostra applicazione')\r\n        break\r\n    else:\r\n        print(\"comando non riconosciuto\")\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Gestione_Contatori.py	(revision 0d46960da810e287b970c60178881bc6ecaa8f7a)
++++ Gestione_Contatori.py	(date 1604960172223)
+@@ -1,18 +1,18 @@
+-#import os
+-#os.chdir('C:/Users/fabio/Desktop/Code contest project/')
+-#import pymysql
++import os
++os.chdir('C:/Users/fabio/Desktop/Code contest project/')
++import pymysql
+ 
+-#db = pymysql.connect(host="localhost",    # your host, usually localhost
++db = pymysql.connect(host="localhost",    # your host, usually localhost
+                      user="root",         # your username
+                      db="ccp")            # name of the data base
+-#cur = db.cursor()
++cur = db.cursor()
+ 
+-#cur.execute('INSERT INTO banche(id_banca, nome_banca, indirizzo_fatturazione) VALUES (001, "Banca di Milano", "Via Verdi 5"),(002, "Banca di Milano", "Via Verdi 5"),(003, "Banca di Milano", "Via Verdi 5")')
+-#cur.execute("SELECT * FROM banche")
+-#db.commit()
++cur.execute('INSERT INTO banche(id_banca, nome_banca, indirizzo_fatturazione) VALUES (001, "Banca di Milano", "Via Verdi 5"),(002, "Banca di Milano", "Via Verdi 5"),(003, "Banca di Milano", "Via Verdi 5")')
++cur.execute("SELECT * FROM banche")
++db.commit()
+ 
+-#for row in cur.fetchall():
+-#    print (row)
++for row in cur.fetchall():
++    print (row)
+ def rimuovi_cliente(nome_da_eliminare):
+     pass
+ def stampa_clienti():
