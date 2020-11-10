@@ -1,24 +1,30 @@
-import os
-os.chdir('C:/Users/fabio/Desktop/Code contest project/')
 import pymysql
-
 db = pymysql.connect(host="localhost",    # your host, usually localhost
                      user="root",         # your username
                      db="ccp")            # name of the data base
 cur = db.cursor()
+#sql = "INSERT INTO banche(id_banca, nome_banca, indirizzo_fatturazione) VALUES (%s, %s, %s)"
+#value = ("001", "Banca di Milano", "Via Verdi 5")
+#cur.execute(sql, value)
+#cur.execute("SELECT * FROM banche")
 
-cur.execute('INSERT INTO banche(id_banca, nome_banca, indirizzo_fatturazione) VALUES (001, "Banca di Milano", "Via Verdi 5"),(002, "Banca di Milano", "Via Verdi 5"),(003, "Banca di Milano", "Via Verdi 5")')
-cur.execute("SELECT * FROM banche")
-db.commit()
-
-for row in cur.fetchall():
-    print (row)
-def rimuovi_cliente(nome_da_eliminare):
-    pass
+def rimuovi_riga(nome_da_eliminare):     ###METODO DA TESTARE###
+    scegli_tabella()
+    lista_colonne = []
+    cur.execute('SHOW COLUMNS FROM ' + tabella_scelta)
+    for row in cur:
+        name = row[0]
+        lista_colonne.append(name)
+    id_da_eliminare = input('inserisci l\'id dell\'oggetto da eliminare: ')
+    cur.execute("DELETE * FROM " + tabella_scelta + " WHERE " + lista_colonne[0] + " = "+ id_da_eliminare)
+    db.commit()
+def scegli_tabella():
+    global tabella_scelta
+    tabella_scelta = input('> ')
 def stampa_clienti():
     pass
-def nuovo_cliente():
-    pass
+def aggiungi_osservazione():
+   pass
 def stampa_comandi():
     print("****************")
     print("1 Cancella utente")
