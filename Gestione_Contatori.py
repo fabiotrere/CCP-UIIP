@@ -4,13 +4,13 @@ db = pymysql.connect(host="localhost",                    # your host, usually l
                      db="gestione_contatori")             # name of the data base
 cur = db.cursor()
 
-cur.execute('INSERT INTO banche(id_banca, nome_banca, indirizzo_fatturazione) VALUES (001, "Banca di Milano", "Via Verdi 5"),(002, "Banca di Pescara", "Via Verdi 5"),(003, "Banca di Firenze", "Via Rossi 5"),(004, "Banca di Pisa", "Via del Corso 5"),(005, "Banca di Torino", "Via Roma 15"),(006, "Banca di Bari", "Via Sparano 5"), (007, "Banca di Venezia", "Via Capri 7"),(008, "Unicredit Banca", "Via Battisti 21"), (009, "Banca Intesa", "Via Liguria 43"),(010, "Banca di Bologna", "Via Leonida 5")')
-cur.execute("SELECT * FROM banche")
+
+
+cur.execute('INSERT INTO letture_contatore(id_lettura, id_contatore, mese_lettura, fascia_energia1, fascia_energia2, fascia_energia3) VALUES (001, 001, "2020-01-01", 500, 700, 1500),(002, 002, "2020-02-01", 300, 700, 1500),(003, 003, "2020-03-01", 300, 500, 700),(004, 004, "2020-04-01", 500, 800, 1000),(005, 005, "2020-05-01", 300, 700, 1500),(006, 006, "2020-06-01", 300, 500, 1500),(007, 001, "2020-07-01", 250, 500, 1000), (008, 008, "2020-08-01", 400, 600, 800),(009, 009, "2020-09-01", 500, 600, 900),(010, 010, "2020-10-01", 300, 500, 700)')
+cur.execute("SELECT * FROM letture_contatore")
 db.commit()
 
-cur.execute('INSERT INTO utenti(id_utente, CF, nome, cognome, indirizzo, città, CAP, tipologia_cliente, moroso) VALUES (001, "RSSMRA68S14D643C", "Mario", "Rossi", "Via Campania 9", "Taranto", "74121", "azienda", "NO"),(002, "VRDGLI68S14D643W", "Giulia", "Verdi", "Via Mirabella 33", "Foggia", "71021", "privato", "NO"),(003, "BLLLSN82A01H501P", "Alessandro", "Bellino", "Via Roma 6", "Roma", "00145", "azienda", "NO"),(004, "DPLFNC60R54D643P", "Francesco", "Depaolis", "Via Firenze 10", "Bari", "72987", "privato", "NO"),(005, "BRNCRL74A01F205Z", "Carla", "Bernabei", "Via Castelfidardo 3", "Milano", "20122", "azienda", "NO"),(006, "GRCNGL73R54D643R", "Angela", "Grieco", "Via Cesare Battisti 56", "Roma", "00145", "privato", "SI"), (007, "CNTGNI85A01F205K", "Gina", "Conte", "Via Marconi 50", "Roma", "00147", "azienda", "NO"),(008, "RSSMHL73R54D643T", "Michele", "Rossi", "Via Mazzini 4", "Torino", "10121", "privato", "SI"), (009, "MRZFLV85A01L219V", "Flavio", "Marzocca", "Via Amendola 90", "Firenze", "00354", "azienda", "NO"),(010, "CRDCLD94E45L049W", "Claudia", "Cardella", "Via Veneto 89", "Roma", "00148", "privato", "NO")')
-cur.execute("SELECT * FROM utenti")
-db.commit()
+
 
 def rimuovi_cliente(nome_da_eliminare):
     pass
