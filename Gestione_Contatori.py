@@ -4,8 +4,8 @@ db = pymysql.connect(host="localhost",                    # your host, usually l
                      db="gestione_contatori")             # name of the data base
 cur = db.cursor()
 
-cur.execute('INSERT INTO guasto(id_Contatore, data_segnalazione, tecnico_assegnato, data_primo_intervento, data_risoluzione) VALUES (001, "2020/05/20", "Rossi Alberto", "2020/05/22", "2020/05/23"),(002, "2020/07/11", "Ferrari Giuseppe", "2020/07/15", "2020/07/16"),(003, "2020/07/15", "Laurino Aldo", "2020/07/20", "2020/07/20"),(004, "2020/08/27", "Verdi Filippo", "2020/09/01", "2020/09/02"),(005, "2020/09/14", "Gallo Angelo", "2020/09/17", "2020/09/18"),(006, "2020/09/17", "Russo Roberto", "2020/09/20", "2020/09/20"),(007, "2020/10/05", "Costa Mattia", "2020/10/10", "2020/10/10"),(008, "2020/10/20", "De Luca Stefano", "2020/10/17", "2020/10/18"),(009, "2020/10/20", "Romano Luca", "2020/10/21", "2020/10/21"),(010, "2020/11/03", "Fontana Enrico", "2020/11/06", "2020/11/07")')
-cur.execute("SELECT * FROM guasto")
+cur.execute('INSERT INTO contatori(id_contatore, id_utente, indirizzo, tecnico_assegnato, data_attivazione) VALUES (001, "001", "Via XVIII agosto n° 12", "010", "2015/05/21"), (002, "002", "Via Parigi n°1", "011", "2017/10/15"), (003, "003", "Via Cavour n° 22", "020", "2018/07/20"), (004, "004", "Via Mazzini n° 30", "015", "2018/04/02"), (005, "005", "Via Marconi n° 16", "012", "2019/03/18"), (006, "006", "Via Vespucci n° 30", "022", "2019/05/19"), (008, "008", "Via Venezia n° 5", "025", "2019/06/20"), (009, "009", "Via Dante n° 11", "020", "2019/07/16"), (010, "010", "Via Crispi 31", "025", "2019/10/01")')
+cur.execute("SELECT * FROM contatori")
 db.commit()
 
 def rimuovi_cliente(nome_da_eliminare):
