@@ -9,6 +9,7 @@ cur.execute('INSERT INTO bolletta(Id_bolletta, id_lettura, data_emissione, data_
 cur.execute("SELECT * FROM bolletta")
 db.commit()
 
+
 def rimuovi_cliente(nome_da_eliminare):
     pass
 def stampa_clienti():
