@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 db = pymysql.connect(host="localhost",    # your host, usually localhost
                      user="root",         # your username
-                     db="ccp")            # name of the data base
+                     db="ccp3")            # name of the data base
 cur = db.cursor()
 def stampa_morosi_gravi():
     count = 0

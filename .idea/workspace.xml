@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f85324-8ca4-4c83-a507-dd85a352ed90" name="Default Changelist" comment="4 funzioni OK">
+    <list default="true" id="22f85324-8ca4-4c83-a507-dd85a352ed90" name="Default Changelist" comment="Come Richiesto in Trello">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gestione_Contatori.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_Contatori.py" afterDir="false" />
     </list>
@@ -170,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605019436302</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Come Richiesto in Trello">
+      <created>1605057828769</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1605057828769</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -218,29 +225,30 @@
     <MESSAGE value="Menu iniziale 1.0&#10;def rimuovi riga" />
     <MESSAGE value="Inserimento e Eliminazione&#10;delle righe" />
     <MESSAGE value="4 funzioni OK" />
-    <option name="LAST_COMMIT_MESSAGE" value="4 funzioni OK" />
+    <MESSAGE value="Come Richiesto in Trello" />
+    <option name="LAST_COMMIT_MESSAGE" value="Come Richiesto in Trello" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="93" width="1363" height="645" key="DiffContextDialog" timestamp="1605014067942">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="93" y="93" width="1363" height="645" key="DiffContextDialog/0.0.1549.831@0.0.1549.831" timestamp="1605014067942" />
-    <state width="1528" height="211" key="GridCell.Tab.0.bottom" timestamp="1605057637942">
+    <state width="1528" height="211" key="GridCell.Tab.0.bottom" timestamp="1605105831776">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="211" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1605057637942" />
-    <state width="1528" height="211" key="GridCell.Tab.0.center" timestamp="1605057637942">
+    <state width="1528" height="211" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1605105831776" />
+    <state width="1528" height="211" key="GridCell.Tab.0.center" timestamp="1605105831776">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="211" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1605057637942" />
-    <state width="1528" height="211" key="GridCell.Tab.0.left" timestamp="1605057637942">
+    <state width="1528" height="211" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1605105831776" />
+    <state width="1528" height="211" key="GridCell.Tab.0.left" timestamp="1605105831776">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="211" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1605057637942" />
-    <state width="1528" height="211" key="GridCell.Tab.0.right" timestamp="1605057637942">
+    <state width="1528" height="211" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1605105831776" />
+    <state width="1528" height="211" key="GridCell.Tab.0.right" timestamp="1605105831776">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="211" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1605057637942" />
+    <state width="1528" height="211" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1605105831776" />
     <state width="1528" height="264" key="GridCell.Tab.1.bottom" timestamp="1605021305968">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
@@ -269,10 +277,10 @@
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="284" y="60" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1604997609453" />
-    <state x="281" y="271" key="Vcs.Push.Dialog.v2" timestamp="1605019441100">
+    <state x="281" y="271" key="Vcs.Push.Dialog.v2" timestamp="1605057855772">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="281" y="271" key="Vcs.Push.Dialog.v2/0.0.1549.831@0.0.1549.831" timestamp="1605019441100" />
+    <state x="281" y="271" key="Vcs.Push.Dialog.v2/0.0.1549.831@0.0.1549.831" timestamp="1605057855772" />
     <state x="596" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605013874287">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
