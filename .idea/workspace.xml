@@ -28,7 +28,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="22f85324-8ca4-4c83-a507-dd85a352ed90" name="Default Changelist" comment="Inserimento e Eliminazione&#10;delle righe">
+    <list default="true" id="22f85324-8ca4-4c83-a507-dd85a352ed90" name="Default Changelist" comment="4 funzioni OK">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Gestione_Contatori.py" beforeDir="false" afterPath="$PROJECT_DIR$/Gestione_Contatori.py" afterDir="false" />
     </list>
@@ -76,88 +76,6 @@
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
       <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
-      <module name="CCP-UIIP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="Tox" factoryName="Tox">
-      <module name="CCP-UIIP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Docutils task">
-      <module name="CCP-UIIP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="docs" factoryName="Sphinx task">
-      <module name="CCP-UIIP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="docutils_input_file" value="" />
-      <option name="docutils_output_file" value="" />
-      <option name="docutils_params" value="" />
-      <option name="docutils_task" value="" />
-      <option name="docutils_open_in_browser" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration default="true" type="tests" factoryName="Doctests">
-      <module name="CCP-UIIP" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="FOLDER_NAME" value="" />
-      <option name="TEST_TYPE" value="TEST_SCRIPT" />
-      <option name="PATTERN" value="" />
-      <option name="USE_PATTERN" value="false" />
       <method v="2" />
     </configuration>
     <recent_temporary>
@@ -245,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605014546444</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="4 funzioni OK">
+      <created>1605019436302</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605019436302</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -292,61 +217,62 @@
     <MESSAGE value="Menu iniziale 1.0&#10;Connessione a my sql_1" />
     <MESSAGE value="Menu iniziale 1.0&#10;def rimuovi riga" />
     <MESSAGE value="Inserimento e Eliminazione&#10;delle righe" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inserimento e Eliminazione&#10;delle righe" />
+    <MESSAGE value="4 funzioni OK" />
+    <option name="LAST_COMMIT_MESSAGE" value="4 funzioni OK" />
   </component>
   <component name="WindowStateProjectService">
     <state x="93" y="93" width="1363" height="645" key="DiffContextDialog" timestamp="1605014067942">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="93" y="93" width="1363" height="645" key="DiffContextDialog/0.0.1549.831@0.0.1549.831" timestamp="1605014067942" />
-    <state width="1528" height="212" key="GridCell.Tab.0.bottom" timestamp="1605019314073">
+    <state width="1528" height="211" key="GridCell.Tab.0.bottom" timestamp="1605057637942">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="212" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1605019314073" />
-    <state width="1528" height="212" key="GridCell.Tab.0.center" timestamp="1605019314073">
+    <state width="1528" height="211" key="GridCell.Tab.0.bottom/0.0.1549.831@0.0.1549.831" timestamp="1605057637942" />
+    <state width="1528" height="211" key="GridCell.Tab.0.center" timestamp="1605057637942">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="212" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1605019314073" />
-    <state width="1528" height="212" key="GridCell.Tab.0.left" timestamp="1605019314073">
+    <state width="1528" height="211" key="GridCell.Tab.0.center/0.0.1549.831@0.0.1549.831" timestamp="1605057637942" />
+    <state width="1528" height="211" key="GridCell.Tab.0.left" timestamp="1605057637942">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="212" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1605019314073" />
-    <state width="1528" height="212" key="GridCell.Tab.0.right" timestamp="1605019314073">
+    <state width="1528" height="211" key="GridCell.Tab.0.left/0.0.1549.831@0.0.1549.831" timestamp="1605057637942" />
+    <state width="1528" height="211" key="GridCell.Tab.0.right" timestamp="1605057637942">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="212" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1605019314073" />
-    <state width="1528" height="264" key="GridCell.Tab.1.bottom" timestamp="1605014051392">
+    <state width="1528" height="211" key="GridCell.Tab.0.right/0.0.1549.831@0.0.1549.831" timestamp="1605057637942" />
+    <state width="1528" height="264" key="GridCell.Tab.1.bottom" timestamp="1605021305968">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="264" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1605014051392" />
-    <state width="1528" height="264" key="GridCell.Tab.1.center" timestamp="1605014051392">
+    <state width="1528" height="264" key="GridCell.Tab.1.bottom/0.0.1549.831@0.0.1549.831" timestamp="1605021305968" />
+    <state width="1528" height="264" key="GridCell.Tab.1.center" timestamp="1605021305968">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="264" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1605014051392" />
-    <state width="1528" height="264" key="GridCell.Tab.1.left" timestamp="1605014051392">
+    <state width="1528" height="264" key="GridCell.Tab.1.center/0.0.1549.831@0.0.1549.831" timestamp="1605021305968" />
+    <state width="1528" height="264" key="GridCell.Tab.1.left" timestamp="1605021305968">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="264" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1605014051392" />
-    <state width="1528" height="264" key="GridCell.Tab.1.right" timestamp="1605014051392">
+    <state width="1528" height="264" key="GridCell.Tab.1.left/0.0.1549.831@0.0.1549.831" timestamp="1605021305968" />
+    <state width="1528" height="264" key="GridCell.Tab.1.right" timestamp="1605021305968">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state width="1528" height="264" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1605014051392" />
-    <state x="148" y="66" key="MergeDialog" timestamp="1605013733062">
+    <state width="1528" height="264" key="GridCell.Tab.1.right/0.0.1549.831@0.0.1549.831" timestamp="1605021305968" />
+    <state x="148" y="66" key="MergeDialog" timestamp="1605019492128">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="148" y="66" key="MergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1605013733062" />
-    <state x="417" y="177" key="MultipleFileMergeDialog" timestamp="1605013733066">
+    <state x="148" y="66" key="MergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1605019492128" />
+    <state x="417" y="177" key="MultipleFileMergeDialog" timestamp="1605019492132">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="417" y="177" key="MultipleFileMergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1605013733066" />
+    <state x="417" y="177" key="MultipleFileMergeDialog/0.0.1549.831@0.0.1549.831" timestamp="1605019492132" />
     <state x="284" y="60" key="SettingsEditor" timestamp="1604997609453">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
     <state x="284" y="60" key="SettingsEditor/0.0.1549.831@0.0.1549.831" timestamp="1604997609453" />
-    <state x="281" y="271" key="Vcs.Push.Dialog.v2" timestamp="1605014649523">
+    <state x="281" y="271" key="Vcs.Push.Dialog.v2" timestamp="1605019441100">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
-    <state x="281" y="271" key="Vcs.Push.Dialog.v2/0.0.1549.831@0.0.1549.831" timestamp="1605014649523" />
+    <state x="281" y="271" key="Vcs.Push.Dialog.v2/0.0.1549.831@0.0.1549.831" timestamp="1605019441100" />
     <state x="596" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605013874287">
       <screen x="0" y="0" width="1549" height="831" />
     </state>
