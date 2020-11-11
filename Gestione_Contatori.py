@@ -15,7 +15,7 @@ def stampa_morosi_gravi():
             print(lista_nomi_colonne[i], ':', str(row[i]))
         print()
     if count == 0:
-        print('Nessun Guasto')
+        print('Non ci sono morosi gravi')
     else:
         pass
 def stampa_nomi_tabelle():
@@ -154,8 +154,6 @@ def leggi_riga_tabella():
         for i in range(len(row)):
             row[i] = str(row[i])
     print(row)
-def scrittura_bolletta():
-    pass
 def stampa_comandi():
     print("****************")
     print("1 Cancella utente")
