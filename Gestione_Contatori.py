@@ -88,6 +88,7 @@ def rimuovi_riga():
         id_da_eliminare = input('inserisci l\'id dell\'oggetto da eliminare: ')
         cur.execute("DELETE FROM " + tabella_scelta + " WHERE " + lista_colonne[0] + " = "+ id_da_eliminare)
         db.commit()
+        print("Riga eliminata con successo")
     except:
         db.rollback
         print ("ERRORE")
@@ -107,6 +108,7 @@ def modifica_riga():
     selezione_id = input("inserisci l'id della riga da modificare: ")
     cur.execute('UPDATE ' + tabella_scelta + ' SET ' + selezione_campo + ' = ' + '"' + selezione_nuovo_campo + '"' + ' WHERE ' + tabella_scelta + '.'+ lista_colonne[0] + ' = ' + selezione_id)
     db.commit()
+    print("Riga modificata")
 def aggiungi_osservazione():
     try:
         scegli_tabella()
@@ -130,6 +132,7 @@ def aggiungi_osservazione():
         lista_valori = '"' + lista_valori + '"'
         cur.execute('INSERT INTO ' + tabella_scelta + '(' + lista_colonne + ')' + ' VALUES ' + '(' + lista_valori + ')')
         db.commit()
+        print("riga inserita")
     except:
         db.rollback
         print("ERRORE")
