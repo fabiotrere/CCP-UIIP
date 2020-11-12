@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 db = pymysql.connect(host="localhost",    # your host, usually localhost
                      user="root",         # your username
-                     db="ccp3")            # name of the data base
+                     db="ccp3")           # name of the data base
 cur = db.cursor()
 def stampa_morosi_gravi():
     count = 0
@@ -18,32 +18,36 @@ def stampa_morosi_gravi():
         print('Non ci sono morosi gravi')
     else:
         pass
-def stampa_nomi_tabelle():
-    print("(banche, bollette, contatori, guasti, letture_contatori, utenti)")
 def calcolo_bolletta():
-    sql = ('SELECT b.id_bolletta, u.id_utente, u.tipologia_cliente, c.id_contatore, l.data_lettura as periodo_bolletta, SUM(l.fascia_energia1) as tot_fascia1, SUM(l.fascia_energia2) as tot_fascia2, SUM(l.fascia_energia3) as tot_fascia3, SUM(l.fascia_energia1 + l.fascia_energia2 + l.fascia_energia3) as tot_energia_mensile FROM ((letture_contatore l JOIN contatori c ON c.id_contatore = l.id_contatore) JOIN utenti u ON u.id_utente = c.id_utente) JOIN bollette b ON b.id_bolletta = l.id_bolletta GROUP BY b.Id_bolletta')
+    sql = ('SELECT b.id_bolletta, u.id_utente, u.tipologia_cliente, c.id_contatore, l.data_lettura as periodo_bolletta, SUM(l.fascia_energia1) as tot_fascia1, SUM(l.fascia_energia2) as tot_fascia2, SUM(l.fascia_energia3) as tot_fascia3, SUM(l.fascia_energia1 + l.fascia_energia2 + l.fascia_energia3) as tot_energia_mensile FROM ((letture_contatore l JOIN bollette b ON l.id_bolletta = b.Id_bolletta) JOIN contatori c ON c.id_contatore = b.id_contatore) JOIN utenti u ON u.id_utente = c.id_utente GROUP by b.Id_bolletta')
     global dataframe
     dataframe = pd.read_sql(sql, db)
     dataframe['aliquota_iva'] = np.where(dataframe['tipologia_cliente']!= 'azienda', "0", "0.22")
-    dataframe['prezzo_unitario'] = np.where(dataframe['tot_energia_mensile'] < 1600, "0.10", "0.20")
+    dataframe['prezzo_unitario'] = np.where(dataframe['tot_energia_mensile'] < 4500, "0.10", "0.20")
     dataframe['importo_totale'] = ((dataframe['prezzo_unitario'].astype(float)*dataframe['tot_fascia1'].astype(float)*0.8
     + (dataframe['prezzo_unitario'].astype(float)*dataframe['tot_fascia2'].astype(float)*0.9)
     + (dataframe['prezzo_unitario'].astype(float)*dataframe['tot_fascia3'].astype(float)*1))
     * (1 + (dataframe['aliquota_iva'].astype(float))))
+    pd.set_option('display.max_columns', 15)
     print(dataframe)
     for i in range(dataframe.shape[0]):
         cur.execute('UPDATE bollette SET importo_totale =' + str(dataframe.iloc[i, dataframe.columns.get_loc('importo_totale')]) + 'WHERE id_bolletta =' + str(dataframe.iloc[i, dataframe.columns.get_loc('id_bolletta')]))
+        cur.execute('UPDATE bollette SET totale_consumato =' + str(dataframe.iloc[i, dataframe.columns.get_loc('tot_energia_mensile')]) + 'WHERE id_bolletta =' + str(dataframe.iloc[i, dataframe.columns.get_loc('id_bolletta')]))
         db.commit()
+def stampa_nomi_tabelle():
+    print("(banche, bollette, contatori, guasti, letture_contatori, utenti)")
 def aggiornamento_morosità():
     lista_id = []
     cur.execute('SELECT u.id_utente, u.nome, u.cognome FROM (bollette b JOIN contatori c ON b.id_contatore=c.id_contatore) JOIN utenti u on c.id_utente=u.id_utente WHERE b.pagata="NO"')
     for row in cur:
         id = row[0]
         lista_id.append(id)
+    lista_id.sort()
     lista_id = str(lista_id)
     lista_id = lista_id.replace("[", "")
     lista_id = lista_id.replace("]","")
-    print(lista_id)
+    #lista_id2 = list(lista_id)
+    print("Elenco utenti morosi:", lista_id)
     cur.execute('UPDATE utenti SET moroso="SI" WHERE id_utente IN( ' + lista_id + ')')
     db.commit()
 def consumo_per_data():
@@ -156,7 +160,7 @@ def leggi_riga_tabella():
     print(row)
 def stampa_comandi():
     print("****************")
-    print("1 Cancella utente")
+    print("1 Cancella una riga di una tabella, in base all\'id dell\'elemento")
     print("2 Stampa consumi per data")
     print("3 Modifica riga")
     print("4 Leggi una riga di una tabella in base all\'id dell\'elemento")
